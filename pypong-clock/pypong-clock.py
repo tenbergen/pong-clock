@@ -27,21 +27,22 @@ background = None
 #Set the framebuffer device to be the TFT
 os.environ["SDL_FBDEV"] = "/dev/fb1"
 
-RESOLUTION = (320, 200)
+RESOLUTION = (1000, 700)
+# RESOLUTION = (320, 200)
 # RESOLUTION = (256, 128)
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
-PADDLE_HEIGHT = 25
+PADDLE_HEIGHT = 75 # 25
 PADDLE_WIDTH = 8
-BALL_WIDTH = 12
-BALL_HEIGHT = 12
+BALL_WIDTH = 15 #12
+BALL_HEIGHT = 15 #12
 PADDLE_GUTTER_OFFSET = 4  	# Offset for the paddles
 CENTER_DIVIDER_SIZE = 2		# Size of the squares that divide the playing area in half
 FIELD_EDGE_WIDTH = 3		# Edging on the top and bottom playing area
 FIELD_EDGE_HEIGHT = 1		# Height of edging
 FIELD_EDGE_OFFSET = 2		# Offset between the display surface edge and the edging
-CAN_RESET_HOUR = True	    # On the hour we reset the score to 00, 00
-SCREEN_MODE = pygame.RESIZABLE #pygame.SCALED pygame.FULLSCREEN
+CAN_RESET_HOUR = False	    # On the hour we reset the score to 00, 00
+SCREEN_MODE = pygame.FULLSCREEN #pygame.SCALED pygame.FULLSCREEN pygame.RESIZABLE
 
 def main():
 
