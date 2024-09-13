@@ -1,0 +1,19 @@
+[Unit]
+#Launch the Pong clock
+Description= Pong Clock Service
+After= multi-user.target
+
+[Service]
+User=pi
+Type=simple
+Environment="DISPLAY=:0"
+Environment="XAUTHORITY=/home/pi/.Xauthority"
+ExecStart=/usr/bin/python /home/pi/pong-clock/pypong-clock/pypong-clock.py
+StandardInput=tty-force
+Restart=always
+RestartSec = 55
+KillMode = process
+SendSIGHUP = no
+
+[Install]
+WantedBy=graphical.target
