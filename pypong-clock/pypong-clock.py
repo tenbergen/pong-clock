@@ -67,8 +67,8 @@ def main():
     game_ball = Ball(ball_pos, ball_paddles, (2.0, 3.0), SCREEN, play_area)
 
     # Configure the score display which will show the time
-    right_score_display = ScoreDisplay((RESOLUTION[0] / 2 + 18, 300, 30, 50), (30, 56), 00, 'right')            #     right_score_display = ScoreDisplay((RESOLUTION[0] / 2 + 18, 20, 30, 50), (15, 28), 00, 'right')
-    left_score_display = ScoreDisplay((RESOLUTION[0] / 2 - 18, 300, 60, 100), (30, 56), 00, 'left', True)       #     left_score_display = ScoreDisplay((RESOLUTION[0] / 2 - 18, 20, 60, 100), (15, 28), 00, 'left', True)
+    right_score_display = ScoreDisplay((RESOLUTION[0] / 2 + 18, 300, 30, 50), (45, 84), 00, 'right')            #     right_score_display = ScoreDisplay((RESOLUTION[0] / 2 + 18, 20, 30, 50), (15, 28), 00, 'right')
+    left_score_display = ScoreDisplay((RESOLUTION[0] / 2 - 18, 300, 60, 100), (45, 84), 00, 'left', True)       #     left_score_display = ScoreDisplay((RESOLUTION[0] / 2 - 18, 20, 60, 100), (15, 28), 00, 'left', True)
 
     # Wire up the events we will be using
     game_ball.point_scored += right_score_display.increment_score
